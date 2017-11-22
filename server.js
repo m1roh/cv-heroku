@@ -3,17 +3,15 @@ const path = require('path');
 
 const PORT = process.env.PORT || 5000;
 
-let app = express();
-
-app.set('view engine', 'ejs');
-app.set('port', (process.env.PORT || 5000));
+const app = express();
 
 app.use(express.static(__dirname + '/public'));
+app.use('/vendors', express.static('node_modules'));
 
 app.get('/', (req, res) => {
   res.render(path.join('index'));
 });
 
-app.listen(app.get('port'), () => {
-  console.log('Node app is running on port', app.get('port'));
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });

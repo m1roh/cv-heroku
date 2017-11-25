@@ -7,24 +7,52 @@ body {
   color: #ffe1d7;
 }
 
-.navbar {
+body .container {
+  margin-top: 50px;
+}
+
+hr.blue {
+  border-top: 2px dotted rgba(51, 124, 183, 0.8);
+}
+
+.navbar,
+.navbar .btn,
+.cvHome .btn,
+experiences div.col-lg-3,
+experiences div.col-lg-1,
+competences div,
+education div {
   background-color: #0f0a0f;
   border: 2px solid #ffe1d7;
   border-radius: 15px;
 }
 
-.navbar .btn {
+.navbar .btn,
+.cvHome .btn .btn,
+experiences div.col-lg-3 .btn,
+experiences div.col-lg-1 .btn,
+competences div .btn,
+education div .btn {
   margin-left: 25px;
   background-color: rgba(255, 255, 255, 0.06);
-  border: 2px solid #ffe1d7;
-  border-radius: 15px;
 }
 
-.navbar .btn:hover {
+.navbar .btn:hover,
+.cvHome .btn .btn:hover,
+experiences div.col-lg-3 .btn:hover,
+experiences div.col-lg-1 .btn:hover,
+competences div .btn:hover,
+education div .btn:hover {
   color: rgba(51, 124, 183, 0.8);
 }
 
-.navbar img {
+.navbar img,
+.navbar .btn img,
+.cvHome .btn img,
+experiences div.col-lg-3 img,
+experiences div.col-lg-1 img,
+competences div img,
+education div img {
   margin-top: 5px;
   margin-right: 5px;
   width: 40px;
@@ -37,8 +65,6 @@ body {
 
 .cvHome .btn {
   background-color: rgba(255, 255, 255, 0.06);
-  border: 2px solid #ffe1d7;
-  border-radius: 15px;
   height: 100px;
   margin-bottom: 80px;
   font-size: 2em;
@@ -49,26 +75,84 @@ body {
   font-size: 2.5em;
 }
 
-experiences .container {
-  margin-top: 50px;
-}
-
 experiences .row {
   margin-left: 5%;
 }
 
-experiences div.col-lg-3 {
+experiences div.col-lg-3,
+experiences div.col-lg-1 {
   background-color: rgba(255, 255, 255, 0.06);
-  border: 2px solid #ffe1d7;
-  border-radius: 15px;
-  font-size: 1.1em;
   margin-bottom: 50px;
   text-align: center;
+  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
-experiences div.col-lg-3 hr {
+experiences div.col-lg-3 hr,
+experiences div.col-lg-1 hr {
   margin: 10px 0 10px 0;
 }
- 
 
- /*# sourceMappingURL= style.css.map */
+experiences div.col-lg-1 {
+  font-size: 1.1em;
+}
+
+experiences div.col-lg-1:hover {
+  color: rgba(51, 124, 183, 0.8);
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+competences article {
+  margin-top: 80px;
+}
+
+competences div {
+  background-color: rgba(255, 255, 255, 0.06);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+competences div ul {
+  list-style-type: none;
+}
+
+competences dt {
+  font-size: 1.6em;
+}
+
+competences div.col-lg-1 {
+  font-size: 1.1em;
+}
+
+competences div.col-lg-1:hover {
+  color: rgba(51, 124, 183, 0.8);
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+education .row {
+  margin-left: 5.6%;
+  margin-top: 5%;
+}
+
+education div {
+  background-color: rgba(255, 255, 255, 0.06);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+education div.col-lg-1 {
+  font-size: 1.1em;
+}
+
+education div.col-lg-1:hover {
+  color: rgba(51, 124, 183, 0.8);
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=style.css.map */

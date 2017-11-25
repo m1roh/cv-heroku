@@ -5,6 +5,28 @@ $font-color: rgb(255, 225, 215);
 $btn-background: rgba(255, 255, 255, 0.06);
 $btn-hover: rgba(51, 124, 183, 0.8);
 
+@mixin btn() {
+  @extend .navbar;
+  background-color: $btn-background;
+}
+
+@mixin div() {
+  @include btn();
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+@mixin div-sm() {
+  font-size: 1.1em;
+}
+
+@mixin div-hover() {
+  color: $btn-hover;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
 body {
   height: auto;
   width: auto;
@@ -12,6 +34,13 @@ body {
   background-color: $background;
   padding-top: 50px;
   color: $font-color;
+  .container {
+    margin-top: 50px;
+  }
+}
+
+hr.blue {
+  border-top: 2px dotted $btn-hover;
 }
 
 .navbar {
@@ -20,9 +49,7 @@ body {
   border-radius: $radius;
   .btn {
     margin-left: 25px;
-    background-color: $btn-background;
-    border: $borders;
-    border-radius: $radius;
+    @include btn();
   }
   .btn:hover {
     color: $btn-hover;
@@ -38,9 +65,7 @@ body {
 .cvHome {
   padding-top: 150px;
   .btn {
-    background-color: $btn-background;
-    border: $borders;
-    border-radius: $radius;
+    @include btn();
     height: 100px;
     margin-bottom: 80px;
     font-size: 2em;
@@ -52,21 +77,57 @@ body {
 }
 
 experiences {
-  .container {
-    margin-top: 50px;
-  }
   .row{
     margin-left: 5%;
   }
-  div.col-lg-3 {
-    background-color: $btn-background;
-    border: $borders;
-    border-radius: $radius;
+  div.col-lg-3, div.col-lg-1 {
+    @include div();
     font-size: 1.1em;
-    margin-bottom: 50px;
-    text-align: center;
     hr {
       margin: 10px 0 10px 0;
     }
+  }
+  div.col-lg-1 {
+    @include div-sm();
+  }
+  div.col-lg-1:hover {
+    @include div-hover();
+  }
+}
+
+competences {
+  article {
+    margin-top: 80px;
+  }
+  div{
+    @include div();
+    ul {
+      list-style-type: none;
+    }
+  }
+  dt {
+    font-size: 1.6em;
+  }
+  div.col-lg-1 {
+    @include div-sm();
+  }
+  div.col-lg-1:hover {
+    @include div-hover();
+  }
+}
+
+education {
+  .row {
+    margin-left: 5.6%;
+    margin-top: 5%;
+  }
+  div {
+    @include div();
+  }
+  div.col-lg-1 {
+    @include div-sm();
+  }
+  div.col-lg-1:hover {
+    @include div-hover();
   }
 }

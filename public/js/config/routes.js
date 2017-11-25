@@ -24,6 +24,16 @@ angular.module('cvApp')
       .state('main.exp', {
         url: 'exp',
         component: 'experiences'
+      })
+
+      .state('main.comp', {
+        url: 'comp',
+        component: 'competences'
+      })
+
+      .state('main.educ', {
+        url: 'educ',
+        component: 'education'
       });
 
       /* .state('main.list', {

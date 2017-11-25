@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Romain-Haye.fr Cv</title>
   <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body ng-app="cvApp">
@@ -15,28 +15,23 @@
   <navbar></navbar>
   <ui-view></ui-view>
 
-  <script>
-    document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] +
-      ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
-  </script>
   <script src="vendors/jquery/dist/jquery.js" type="text/javascript"></script>
   <script src="vendors/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
   <script src="vendors/angular/angular.js" type="text/javascript"></script>
   <script src="vendors/@uirouter/core/_bundles/ui-router-core.js" type="text/javascript"></script>
   <script src="vendors/@uirouter/angularjs/release/ui-router-angularjs.js" type="text/javascript"></script>
-<!--   <script src="vendors/angular-resource/angular-resource.js" type="text/javascript"></script>
- -->  <script src="vendors/angular-translate/dist/angular-translate.js" type="text/javascript"></script>
+<!-- <script src="vendors/angular-resource/angular-resource.js" type="text/javascript"></script> -->  <script src="vendors/angular-translate/dist/angular-translate.js" type="text/javascript"></script>
 
   <script src="js/cvApp.js" type="text/javascript"></script>
   <script src="js/config/translate.js" type="text/javascript"></script>
   <script src="js/config/routes.js" type="text/javascript"></script>
-  <!-- <script src="js/services/RecipesService.js" type="text/javascript"></script>
-  <script src="js/services/CategoriesService.js" type="text/javascript"></script> -->
   <script src="js/components/main.js" type="text/javascript"></script>
   <script src="js/components/navbar.js" type="text/javascript"></script>
   <script src="js/components/home.js" type="text/javascript"></script>
   <script src="js/components/cvHome.js" type="text/javascript"></script>
   <script src="js/components/experiences.js" type="text/javascript"></script>
+  <script src="js/components/competences.js" type="text/javascript"></script>
+  <script src="js/components/education.js" type="text/javascript"></script>
   
 </body>
 

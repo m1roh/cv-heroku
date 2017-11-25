@@ -9,18 +9,22 @@ angular.module('cvApp')
       .state('main', {
         url: '/',
         component: 'main',
-        /* abstract: true */
-        /* resolve: {
-          categories: (CategoriesService) => {
-            return CategoriesService.query().$promise;
-          }
-        } */
+      })
+
+      .state('main.home', {
+        url: 'home',
+        component: 'home',
       })
 
       .state('main.cv', {
         url: 'cv',
         component: 'cvHome'
       })
+
+      .state('main.exp', {
+        url: 'exp',
+        component: 'experiences'
+      });
 
       /* .state('main.list', {
         url: 'list?{categoryId:int}',
@@ -56,5 +60,5 @@ angular.module('cvApp')
         component: 'recipeAdd'
       }); */
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
   });

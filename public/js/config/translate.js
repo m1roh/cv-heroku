@@ -13,10 +13,13 @@ angular.module('cvApp')
           PRESENTATION: 'About me',
         },
         CV_HOME: {
-          EXPERIENCES: 'Experiences',
-          SKILLS: 'Skills',
-          EDUCATION: 'Education',
-          MORE: 'More',
+          EXPERIENCES: 'EXPERIENCES',
+          SKILLS: 'SKILLS',
+          EDUCATION: 'EDUCATION',
+          MORE: 'MORE',
+        },
+        HOME: {
+          ABOUT: 'ABOUT ME'
         },
         ALL: 'All'
       })
@@ -27,11 +30,17 @@ angular.module('cvApp')
           PORTFOLIO: 'Portfolio',
           PRESENTATION: 'À propos de moi',
         },
+        HOME: {
+          ABOUT: 'ABOUT'
+        },
         CV_HOME: {
-          EXPERIENCES: 'Expériences',
-          SKILLS: 'Compétences',
-          EDUCATION: 'Formation',
-          MORE: 'Divers',
+          EXPERIENCES: 'EXPÉRIENCES',
+          SKILLS: 'COMPÉTENCES',
+          EDUCATION: 'FORMATION',
+          MORE: 'DIVERS',
+        },
+        HOME: {
+          ABOUT: 'À PROPOS DE MOI'
         },
         ALL: 'Toutes'
       })

@@ -2,6 +2,8 @@ $background: rgb(15, 10, 15);
 $borders: 2px solid rgb(255, 225, 215);
 $radius: 15px;
 $font-color: rgb(255, 225, 215);
+$btn-background: rgba(255, 255, 255, 0.06);
+$btn-hover: rgba(51, 124, 183, 0.8);
 
 body {
   height: auto;
@@ -18,9 +20,12 @@ body {
   border-radius: $radius;
   .btn {
     margin-left: 25px;
-    background-color: $background;
+    background-color: $btn-background;
     border: $borders;
     border-radius: $radius;
+  }
+  .btn:hover {
+    color: $btn-hover;
   }
   img {
     margin-top: 5px;
@@ -33,7 +38,7 @@ body {
 .cvHome {
   padding-top: 150px;
   .btn {
-    background-color: $background;
+    background-color: $btn-background;
     border: $borders;
     border-radius: $radius;
     height: 100px;
@@ -41,7 +46,27 @@ body {
     font-size: 2em;
   }
   .btn:hover {
-    color: #337ab7;
+    color: $btn-hover;
     font-size: 2.5em;
+  }
+}
+
+experiences {
+  .container {
+    margin-top: 50px;
+  }
+  .row{
+    margin-left: 5%;
+  }
+  div.col-lg-3 {
+    background-color: $btn-background;
+    border: $borders;
+    border-radius: $radius;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    text-align: center;
+    hr {
+      margin: 10px 0 10px 0;
+    }
   }
 }

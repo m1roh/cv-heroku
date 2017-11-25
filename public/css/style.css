@@ -1,0 +1,49 @@
+body {
+  height: auto;
+  width: auto;
+  margin: 0;
+  background-color: #0f0a0f;
+  padding-top: 50px;
+  color: #ffe1d7;
+}
+
+.navbar {
+  background-color: #0f0a0f;
+  border: 2px solid #ffe1d7;
+  border-radius: 15px;
+}
+
+.navbar .btn {
+  margin-left: 25px;
+  background-color: #0f0a0f;
+  border: 2px solid #ffe1d7;
+  border-radius: 15px;
+}
+
+.navbar img {
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.cvHome {
+  padding-top: 150px;
+}
+
+.cvHome .btn {
+  background-color: #0f0a0f;
+  border: 2px solid #ffe1d7;
+  border-radius: 15px;
+  height: 100px;
+  margin-bottom: 80px;
+  font-size: 2em;
+}
+
+.cvHome .btn:hover {
+  color: #337ab7;
+  font-size: 2.5em;
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */

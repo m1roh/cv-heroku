@@ -1,0 +1,29 @@
+{
+  "extends": ["google", "plugin:angular/johnpapa"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "quotes": ["warn", "single", "avoid-escape"],
+    "eqeqeq": "warn",
+    "brace-style": ["error", "1tbs"],
+    "eol-last": "off",
+    "no-nested-ternary": 1,
+    "padded-blocks": ["off", "never"],
+    "space-before-blocks": [1, "always"],
+    "comma-dangle": ["off", "never"],
+    "max-len": [1, {
+      "code": 132,
+      "tabWidth": 2
+    }],
+    "space-before-function-paren": ["warn", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 1
+    }],
+    "angular/no-service-method": [0, "always"]    
+  }
+}

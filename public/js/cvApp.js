@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('cvApp', [
-    'pascalprecht.translate',
-    'ui.router',
-    'ngRessource'
+  'pascalprecht.translate',
+  'ui.router',
 ]);

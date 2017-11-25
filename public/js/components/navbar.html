@@ -1,0 +1,20 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="main">Haye-Romain.fr</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <button type="button" class="btn btn-primary navbar-btn">{{'BUTTON.PRESENTATION' | translate}}</button>
+    </ul>
+    <ul class="nav navbar-nav">
+      <button type="button" class="btn btn-primary navbar-btn">{{'BUTTON.PORTFOLIO' | translate}}</button>
+    </ul>
+    <ul class="nav navbar-nav">
+      <button type="button" class="btn btn-primary navbar-btn" ui-sref="main.cv">{{'BUTTON.CV' | translate}}</button>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><img src="images/france.png" alt="français" ng-class="{selected: $ctrl.lang == 'fr'}" ng-click="$ctrl.setLanguage('fr')"></li>
+      <li><img src="images/usa.png" alt="american" ng-class="{selected: $ctrl.lang == 'en'}" ng-click="$ctrl.setLanguage('en')"></li>
+    </ul>
+  </div>
+</nav>

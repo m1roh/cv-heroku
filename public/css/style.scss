@@ -1,0 +1,47 @@
+$background: rgb(15, 10, 15);
+$borders: 2px solid rgb(255, 225, 215);
+$radius: 15px;
+$font-color: rgb(255, 225, 215);
+
+body {
+  height: auto;
+  width: auto;
+  margin: 0;
+  background-color: $background;
+  padding-top: 50px;
+  color: $font-color;
+}
+
+.navbar {
+  background-color: $background;
+  border: $borders;
+  border-radius: $radius;
+  .btn {
+    margin-left: 25px;
+    background-color: $background;
+    border: $borders;
+    border-radius: $radius;
+  }
+  img {
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 40px;
+    cursor: pointer;
+  }
+}
+
+.cvHome {
+  padding-top: 150px;
+  .btn {
+    background-color: $background;
+    border: $borders;
+    border-radius: $radius;
+    height: 100px;
+    margin-bottom: 80px;
+    font-size: 2em;
+  }
+  .btn:hover {
+    color: #337ab7;
+    font-size: 2.5em;
+  }
+}

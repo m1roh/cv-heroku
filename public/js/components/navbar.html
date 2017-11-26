@@ -4,13 +4,16 @@
       <a class="navbar-brand" ui-sref="main.home">Haye-Romain.fr</a>
     </div>
     <ul class="nav navbar-nav">
-      <button type="button" class="btn btn-primary navbar-btn">{{'BUTTON.PRESENTATION' | translate}}</button>
+      <button type="button" class="btn btn-primary navbar-btn" ui-sref="main.about">{{'BUTTON.PRESENTATION' | translate}}</button>
     </ul>
     <ul class="nav navbar-nav">
-      <button type="button" class="btn btn-primary navbar-btn">{{'BUTTON.PORTFOLIO' | translate}}</button>
+      <button type="button" class="btn btn-primary navbar-btn" ui-sref="main.port">{{'BUTTON.PORTFOLIO' | translate}}</button>
     </ul>
     <ul class="nav navbar-nav">
       <button type="button" class="btn btn-primary navbar-btn" ui-sref="main.cv">{{'BUTTON.CV' | translate}}</button>
+    </ul>
+    <ul class="nav navbar-nav">
+      <button type="button" class="btn btn-primary navbar-btn" ui-sref="main.contact">Contact</button>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><img src="images/france.png" alt="français" ng-class="{selected: $ctrl.lang == 'fr'}" ng-click="$ctrl.setLanguage('fr')"></li>

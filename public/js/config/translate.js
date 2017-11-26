@@ -54,6 +54,7 @@ angular.module('cvApp')
           JOB: 'Salesman',
           SKILLS: 'Active selling at the garden department, plants care'
         },
+        BUILD: 'Comming soon'
       })
 
       .translations('fr', {
@@ -104,6 +105,7 @@ angular.module('cvApp')
           JOB: 'Vendeur Conseil',
           SKILLS: 'Vente active au rayon jardin, entretien des plantes'
         },
+        BUILD: 'En construction'
       })
 
       .useSanitizeValueStrategy('escape')

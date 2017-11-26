@@ -39,6 +39,21 @@ angular.module('cvApp')
       .state('main.more', {
         url: 'more',
         component: 'more'
+      })
+
+      .state('main.port', {
+        url: 'port',
+        component: 'portfolio'
+      })
+
+      .state('main.about', {
+        url: 'about',
+        component: 'about'
+      })
+
+      .state('main.contact', {
+        url: 'contact',
+        component: 'contact'
       });
 
       /* .state('main.list', {

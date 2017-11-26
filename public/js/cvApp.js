@@ -3,4 +3,5 @@
 angular.module('cvApp', [
   'pascalprecht.translate',
   'ui.router',
+  'ngAnimate'
 ]);

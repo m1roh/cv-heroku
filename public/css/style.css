@@ -3,156 +3,167 @@ body {
   width: auto;
   margin: 0;
   background-color: #0f0a0f;
+  background-image: url("/images/back2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   padding-top: 50px;
-  color: #ffe1d7;
-}
-
-body .container {
-  margin-top: 50px;
-}
+  color: #ffe1d7; }
+  body .container {
+    margin-top: 50px; }
 
 hr.blue {
-  border-top: 2px dotted rgba(51, 124, 183, 0.8);
-}
+  border-top: 2px dotted rgba(51, 124, 183, 0.8); }
 
-.navbar,
-.navbar .btn,
-.cvHome .btn,
-experiences div.col-lg-3,
-experiences div.col-lg-1,
-competences div,
-education div {
+.navbar, .navbar .btn, .cvHome .btn, experiences div.col-lg-3, experiences div.col-lg-1, competences div, education div, more div.col-lg-10, more div.col-lg-1 {
   background-color: #0f0a0f;
   border: 2px solid #ffe1d7;
-  border-radius: 15px;
-}
-
-.navbar .btn,
-.cvHome .btn .btn,
-experiences div.col-lg-3 .btn,
-experiences div.col-lg-1 .btn,
-competences div .btn,
-education div .btn {
-  margin-left: 25px;
-  background-color: rgba(255, 255, 255, 0.06);
-}
-
-.navbar .btn:hover,
-.cvHome .btn .btn:hover,
-experiences div.col-lg-3 .btn:hover,
-experiences div.col-lg-1 .btn:hover,
-competences div .btn:hover,
-education div .btn:hover {
-  color: rgba(51, 124, 183, 0.8);
-}
-
-.navbar img,
-.navbar .btn img,
-.cvHome .btn img,
-experiences div.col-lg-3 img,
-experiences div.col-lg-1 img,
-competences div img,
-education div img {
-  margin-top: 5px;
-  margin-right: 5px;
-  width: 40px;
-  cursor: pointer;
-}
+  border-radius: 15px; }
+  .navbar .btn, .cvHome .btn .btn, experiences div.col-lg-3 .btn, experiences div.col-lg-1 .btn, competences div .btn, education div .btn, more div.col-lg-10 .btn, more div.col-lg-1 .btn {
+    margin-left: 25px;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .navbar .btn:hover, .cvHome .btn .btn:hover, experiences div.col-lg-3 .btn:hover, experiences div.col-lg-1 .btn:hover, competences div .btn:hover, education div .btn:hover, more div.col-lg-10 .btn:hover, more div.col-lg-1 .btn:hover {
+    color: rgba(51, 124, 183, 0.8); }
+  .navbar img, .navbar .btn img, .cvHome .btn img, experiences div.col-lg-3 img, experiences div.col-lg-1 img, competences div img, education div img, more div.col-lg-10 img, more div.col-lg-1 img {
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 40px;
+    cursor: pointer; }
 
 .cvHome {
-  padding-top: 150px;
-}
-
-.cvHome .btn {
-  background-color: rgba(255, 255, 255, 0.06);
-  height: 100px;
-  margin-bottom: 80px;
-  font-size: 2em;
-}
-
-.cvHome .btn:hover {
-  color: rgba(51, 124, 183, 0.8);
-  font-size: 2.5em;
-}
+  padding-top: 150px; }
+  .cvHome .btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    margin-bottom: 80px;
+    font-size: 2em; }
+  .cvHome .btn:hover {
+    color: rgba(51, 124, 183, 0.8);
+    font-size: 2.5em; }
 
 experiences .row {
-  margin-left: 5%;
-}
-
-experiences div.col-lg-3,
-experiences div.col-lg-1 {
-  background-color: rgba(255, 255, 255, 0.06);
+  margin-left: 5%; }
+experiences div.col-lg-3, experiences div.col-lg-1 {
+  background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.5em;
   font-size: 1.1em;
-}
-
-experiences div.col-lg-3 hr,
-experiences div.col-lg-1 hr {
-  margin: 10px 0 10px 0;
-}
-
+  height: 175px; }
+  experiences div.col-lg-3 hr, experiences div.col-lg-1 hr {
+    margin: 10px 0 10px 0; }
 experiences div.col-lg-1 {
   font-size: 1.1em;
-}
-
+  height: 40px;
+  position: fixed;
+  left: 90%;
+  left: 80%; }
 experiences div.col-lg-1:hover {
   color: rgba(51, 124, 183, 0.8);
   font-size: 1.6em;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 competences article {
-  margin-top: 80px;
-}
-
+  margin-top: 80px; }
 competences div {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 50px;
   text-align: center;
-  font-size: 1.5em;
-}
-
-competences div ul {
-  list-style-type: none;
-}
-
+  font-size: 1.5em; }
+  competences div ul {
+    list-style-type: none; }
 competences dt {
-  font-size: 1.6em;
-}
-
+  font-size: 1.6em; }
 competences div.col-lg-1 {
   font-size: 1.1em;
-}
-
+  height: 40px;
+  position: fixed;
+  left: 90%;
+  left: 80%; }
 competences div.col-lg-1:hover {
   color: rgba(51, 124, 183, 0.8);
   font-size: 1.6em;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 education .row {
   margin-left: 5.6%;
-  margin-top: 5%;
-}
-
+  margin-top: 5%; }
 education div {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 50px;
   text-align: center;
-  font-size: 1.5em;
-}
-
+  font-size: 1.5em; }
 education div.col-lg-1 {
   font-size: 1.1em;
-}
-
+  height: 40px;
+  position: fixed;
+  left: 90%;
+  left: 80%; }
 education div.col-lg-1:hover {
   color: rgba(51, 124, 183, 0.8);
   font-size: 1.6em;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
+more div.col-lg-10 {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em; }
+  more div.col-lg-10 img {
+    width: 100px; }
+more div.col-lg-1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  font-size: 1.1em;
+  height: 40px;
+  position: fixed;
+  left: 90%; }
+more div.col-lg-1:hover {
+  color: rgba(51, 124, 183, 0.8);
+  font-size: 1.6em;
+  cursor: pointer; }
+more div.link {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 2%;
+  border: 2px ridge white;
+  padding-top: 6%; }
+  more div.link a {
+    color: #ffe1d7;
+    text-decoration: none; }
+more div.link:hover {
+  padding-top: 0; }
+  more div.link:hover a {
+    color: rgba(51, 124, 183, 0.8);
+    font-size: 1.1em; }
+more img.media-object {
+  width: 100px; }
+more img.media-object:hover {
+  width: 110px; }
+
+.view-animation.ng-enter, .view-animation.ng-leave {
+  -webkit-transition: 0.9s linear all;
+  transition: 0.9s linear all;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 100%; }
+
+.view-animation.ng-enter {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0; }
+
+.view-animation.ng-leave,
+.view-animation.ng-enter.ng-enter-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 0.3; }
+
+.view-animation.ng-leave.ng-leave-active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

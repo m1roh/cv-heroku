@@ -2,7 +2,7 @@ $background: rgb(15, 10, 15);
 $borders: 2px solid rgb(255, 225, 215);
 $radius: 15px;
 $font-color: rgb(255, 225, 215);
-$btn-background: rgba(255, 255, 255, 0.06);
+$btn-background: rgba(0, 0, 0, 0.7);
 $btn-hover: rgba(51, 124, 183, 0.8);
 
 @mixin btn() {
@@ -19,6 +19,9 @@ $btn-hover: rgba(51, 124, 183, 0.8);
 
 @mixin div-sm() {
   font-size: 1.1em;
+  height: 40px;
+  position: fixed;
+  left: 90%;
 }
 
 @mixin div-hover() {
@@ -32,6 +35,9 @@ body {
   width: auto;
   margin: 0;
   background-color: $background;
+  background-image: url('/images/back2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   padding-top: 50px;
   color: $font-color;
   .container {
@@ -83,12 +89,14 @@ experiences {
   div.col-lg-3, div.col-lg-1 {
     @include div();
     font-size: 1.1em;
+    height: 175px;
     hr {
       margin: 10px 0 10px 0;
     }
   }
   div.col-lg-1 {
     @include div-sm();
+    left: 80%;
   }
   div.col-lg-1:hover {
     @include div-hover();
@@ -110,6 +118,7 @@ competences {
   }
   div.col-lg-1 {
     @include div-sm();
+    left: 80%;
   }
   div.col-lg-1:hover {
     @include div-hover();
@@ -126,8 +135,71 @@ education {
   }
   div.col-lg-1 {
     @include div-sm();
+    left: 80%;
   }
   div.col-lg-1:hover {
     @include div-hover();
   }
+}
+
+more {
+  div.col-lg-10 {
+    @include div();
+    img {
+      width: 100px;
+    }
+  }
+  div.col-lg-1 {
+    @include div();
+    @include div-sm();
+  }
+  div.col-lg-1:hover {
+    @include div-hover();
+  }
+  div.link {
+    height: 100px;
+    width: 300px;
+    margin-bottom: 2%;
+    border: 2px ridge white;
+    padding-top: 6%;
+    a {
+      color: $font-color;
+      text-decoration: none;
+    }
+  }
+  div.link:hover{
+    padding-top: 0;
+    a {
+      color: $btn-hover;
+      font-size: 1.1em;
+    }
+  }
+  img.media-object {
+    width: 100px;
+  }
+
+  img.media-object:hover {
+    width: 110px;
+  }
+}
+
+.view-animation.ng-enter, .view-animation.ng-leave {
+  transition:0.9s linear all;
+  position:fixed;
+  left:0;
+  top:50px;
+  width:100%;
+}
+.view-animation.ng-enter {
+  transform:translateX(100%);
+  opacity: 0;
+}
+.view-animation.ng-leave,
+.view-animation.ng-enter.ng-enter-active {
+  transform:translateX(0%);
+  opacity: 0.3;
+}
+.view-animation.ng-leave.ng-leave-active {
+  transform:translateX(-100%);
+  opacity: 0;
 }

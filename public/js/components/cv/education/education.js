@@ -4,7 +4,7 @@ angular.module('cvApp')
 
   .component('education', {
 
-    templateUrl: 'js/components/education.html',
+    templateUrl: 'js/components/cv/education/education.html',
 
     controller: function ($log) {
 

@@ -2,16 +2,14 @@
 
 angular.module('cvApp')
 
-  .component('cv', {
+  .component('home', {
 
-    templateUrl: 'js/components/cv.html',
+    templateUrl: 'js/components/home/home.html',
 
     controller: function ($log) {
 
       this.$onInit = () => {
-        $log.info('cv component init');
+        $log.info('home component init');
       };
-
     }
-
   });

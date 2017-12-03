@@ -4,7 +4,7 @@ angular.module('cvApp')
 
   .component('navbar', {
 
-    templateUrl: 'js/components/navbar.html',
+    templateUrl: 'js/components/common/navbar/navbar.html',
 
     controller: function ($translate) {
 

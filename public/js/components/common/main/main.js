@@ -4,6 +4,6 @@ angular.module('cvApp')
 
   .component('main', {
 
-    templateUrl: 'js/components/main.html'
+    templateUrl: 'js/components/common/main/main.html'
 
   });
